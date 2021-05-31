@@ -1,5 +1,14 @@
-var  mybutton = document.querySelector("button");
-mybutton.addEventListener("click", function(event) {
+var mybutton = document.getElementById("clickme");
+  mybutton.addEventListener("click", function() {
+    alert("You clicked!");
+  });
+
+  var button = document.getElementById(“onlyOnce");
+  function once() {
+    console.log("Done.");
+    button.removeEventListener("click", once);
+  }
+  button.addEventListener("click", once);
 
 
 var element = document.getElementsByTagName("div");

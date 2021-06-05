@@ -4,11 +4,9 @@ body {
 }
 
 .dot {
-    height: 8px;
-    width: 8px;
-    border-radius: 4px;
-
-    /* rounds corners */
-    background: blue;
+    padding: 10px;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: red;
     position: absolute;
 }

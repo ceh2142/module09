@@ -8,7 +8,7 @@ function createDot(event) {
   document.body.appendChild(dot);
 }
 
-var  mybutton = document.querySelector("button");
+var mybutton = document.querySelector("button");
 mybutton.addEventListener("click", function(event) {
 
 

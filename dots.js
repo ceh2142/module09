@@ -1,6 +1,9 @@
-var dot = document.getElementById("dot");
-       addEventListener('click', function(event){
-          dot.style.visibility="visible";
-          box.left = event.pageX;
-          box.top = event.pageY;
-   });
+addEventListener('click', createDot);
+
+function createDot(event) {
+  var dot = document.createElement('div');
+  dot.className = 'dot';
+  dot.style.left = event.pageX + 'px';
+  dot.style.top = event.pageY + 'px';
+  document.body.appendChild(dot);
+}
